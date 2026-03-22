@@ -88,30 +88,30 @@ export const App = () => {
           <div className='calculator' ref={calcRef}>
             <div className='nav' onMouseDown={onMouseDown}>
               <img
-                src='/src/assets/nav/bar.svg'
+                src='/nav/bar.svg'
                 alt='Bar'
                 className='nav-background'
                 draggable='false'
               />
               <img
-                src='/src/assets/nav/minimize.svg'
+                src='/nav/minimize.svg'
                 alt='Minimize'
                 className='btn min'
               />
               <img
-                src='/src/assets/nav/maximize.svg'
+                src='/nav/maximize.svg'
                 alt='Maximize'
                 className='max'
               />
               <img
-                src='/src/assets/nav/close.svg'
+                src='/nav/close.svg'
                 alt='Close'
                 className='btn close'
               />
             </div>
             <div className='container'>
               <img
-                src='/src/assets/container.svg'
+                src='/container.svg'
                 alt='Contianer'
                 className='c-background'
               />
