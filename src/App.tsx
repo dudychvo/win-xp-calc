@@ -93,7 +93,11 @@ export const App = () => {
                 className='nav-background'
                 draggable='false'
               />
-              <img src='/nav/minimize.svg' alt='Minimize' className='btn min' />
+              <img
+                src='assets/nav/minimize.svg'
+                alt='Minimize'
+                className='btn min'
+              />
               <img src='/nav/maximize.svg' alt='Maximize' className='max' />
               <img src='/nav/close.svg' alt='Close' className='btn close' />
             </div>
@@ -124,7 +128,7 @@ export const App = () => {
               </div>
               <div className='keys-one'>
                 <img
-                  src='/src/assets/keys-one/nothing.svg'
+                  src='/keys-one/nothing.svg'
                   alt='Nothing'
                   className='nothing'
                 />
