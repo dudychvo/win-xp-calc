@@ -88,7 +88,7 @@ export const App = () => {
           <div className='calculator' ref={calcRef}>
             <div className='nav' onMouseDown={onMouseDown}>
               <img
-                src='/nav/bar.svg'
+                src='assets/nav/bar.svg'
                 alt='Bar'
                 className='nav-background'
                 draggable='false'
@@ -98,12 +98,12 @@ export const App = () => {
                 alt='Minimize'
                 className='btn min'
               />
-              <img src='/nav/maximize.svg' alt='Maximize' className='max' />
-              <img src='/nav/close.svg' alt='Close' className='btn close' />
+              <img src='assets/nav/maximize.svg' alt='Maximize' className='max' />
+              <img src='assets/nav/close.svg' alt='Close' className='btn close' />
             </div>
             <div className='container'>
               <img
-                src='/container.svg'
+                src='assets/container.svg'
                 alt='Contianer'
                 className='c-background'
               />
@@ -128,24 +128,24 @@ export const App = () => {
               </div>
               <div className='keys-one'>
                 <img
-                  src='/keys-one/nothing.svg'
+                  src='assets/keys-one/nothing.svg'
                   alt='Nothing'
                   className='nothing'
                 />
                 <img
-                  src='/src/assets/keys-one/backspace.svg'
+                  src='/assets/keys-one/backspace.svg'
                   alt='Backspace'
                   className='btn backspace'
                   onClick={handleBackspace}
                 />
                 <img
-                  src='/src/assets/keys-one/CE.svg'
+                  src='/assets/keys-one/CE.svg'
                   alt='CE'
                   className='btn ce'
                   onClick={handleClear}
                 />
                 <img
-                  src='/src/assets/keys-one/C.svg'
+                  src='/assets/keys-one/C.svg'
                   alt='C'
                   className='btn c'
                   onClick={handleClear}
@@ -154,95 +154,95 @@ export const App = () => {
               <div className='keys-two'>
                 <div className='strange'>
                   <img
-                    src='/src/assets/strange/MC.svg'
+                    src='/assets/strange/MC.svg'
                     alt='MC'
                     className=' btn mc'
                   />
                   <img
-                    src='/src/assets/strange/MR.svg'
+                    src='/assets/strange/MR.svg'
                     alt='MR'
                     className=' btn mr'
                   />
                   <img
-                    src='/src/assets/strange/MS.svg'
+                    src='/assets/strange/MS.svg'
                     alt='MS'
                     className=' btn ms'
                   />
                   <img
-                    src='/src/assets/strange/M+.svg'
+                    src='/assets/strange/M+.svg'
                     alt='M+'
                     className=' btn m+'
                   />
                 </div>
                 <div className='numbers'>
                   <img
-                    src='/src/assets/numbers/7.svg'
+                    src='/assets/numbers/7.svg'
                     alt='7'
                     className='btn'
                     onClick={() => handleCharClick('7')}
                   />
                   <img
-                    src='/src/assets/numbers/8.svg'
+                    src='/assets/numbers/8.svg'
                     alt='8'
                     className='btn'
                     onClick={() => handleCharClick('8')}
                   />
                   <img
-                    src='/src/assets/numbers/9.svg'
+                    src='/assets/numbers/9.svg'
                     alt='9'
                     className='btn'
                     onClick={() => handleCharClick('9')}
                   />
                   <img
-                    src='/src/assets/numbers/4.svg'
+                    src='/assets/numbers/4.svg'
                     alt='4'
                     className='btn'
                     onClick={() => handleCharClick('4')}
                   />
                   <img
-                    src='/src/assets/numbers/5.svg'
+                    src='/assets/numbers/5.svg'
                     alt='5'
                     className='btn'
                     onClick={() => handleCharClick('5')}
                   />
                   <img
-                    src='/src/assets/numbers/6.svg'
+                    src='/assets/numbers/6.svg'
                     alt='6'
                     className='btn'
                     onClick={() => handleCharClick('6')}
                   />
                   <img
-                    src='/src/assets/numbers/1.svg'
+                    src='/assets/numbers/1.svg'
                     alt='1'
                     className='btn'
                     onClick={() => handleCharClick('1')}
                   />
                   <img
-                    src='/src/assets/numbers/2.svg'
+                    src='/assets/numbers/2.svg'
                     alt='2'
                     className='btn'
                     onClick={() => handleCharClick('2')}
                   />
                   <img
-                    src='/src/assets/numbers/3.svg'
+                    src='/assets/numbers/3.svg'
                     alt='3'
                     className='btn'
                     onClick={() => handleCharClick('3')}
                   />
                   <img
-                    src='/src/assets/numbers/0.svg'
+                    src='/assets/numbers/0.svg'
                     alt='0'
                     className='btn'
                     onClick={() => handleCharClick('0')}
                   />
                   <img
-                    src='/src/assets/numbers/+:-.svg'
+                    src='/assets/numbers/+:-.svg'
                     alt='+/-'
                     className='btn'
                     onClick={handleToggleSign}
                   />
                   <img
-                    src='/src/assets/numbers/dot.svg'
+                    src='/assets/numbers/dot.svg'
                     alt='.'
                     className='btn'
                     onClick={() => handleCharClick('.')}
@@ -250,49 +250,49 @@ export const App = () => {
                 </div>
                 <div className='operators'>
                   <img
-                    src='/src/assets/operators/devide.svg'
+                    src='/assets/operators/devide.svg'
                     alt='/'
                     className='btn'
                     onClick={() => handleCharClick('/')}
                   />
                   <img
-                    src='/src/assets/operators/sqrt.svg'
+                    src='/assets/operators/sqrt.svg'
                     alt='sqrt'
                     className='btn'
                     onClick={handleSqrt}
                   />
                   <img
-                    src='/src/assets/operators/multiply.svg'
+                    src='/assets/operators/multiply.svg'
                     alt='*'
                     className='btn'
                     onClick={() => handleCharClick('*')}
                   />
                   <img
-                    src='/src/assets/operators/percent.svg'
+                    src='/assets/operators/percent.svg'
                     alt='%'
                     className='btn'
                     onClick={() => handleCharClick('%')}
                   />
                   <img
-                    src='/src/assets/operators/minus.svg'
+                    src='/assets/operators/minus.svg'
                     alt='-'
                     className='btn'
                     onClick={() => handleCharClick('-')}
                   />
                   <img
-                    src='/src/assets/operators/1x.svg'
+                    src='/assets/operators/1x.svg'
                     alt='1/x'
                     className='btn'
                     onClick={handleReciprocal}
                   />
                   <img
-                    src='/src/assets/operators/plus.svg'
+                    src='/assets/operators/plus.svg'
                     alt='+'
                     className='btn'
                     onClick={() => handleCharClick('+')}
                   />
                   <img
-                    src='/src/assets/operators/equals.svg'
+                    src='/assets/operators/equals.svg'
                     alt='='
                     className='btn'
                     onClick={handleEquals}

@@ -19,7 +19,7 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('/src/assets/monitor.png');
+    background-image: url('/assets/monitor.png');
     background-size: 100% 100%; // ← stretches to fill exactly
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@ img {
   .screen {
     position: absolute;
     inset: 0;
-    background-image: url('/src/assets/background.jpg');
+    background-image: url('/assets/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
