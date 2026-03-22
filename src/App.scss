@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'win-xp';
+  src: url('/public/fonts/LeviWindows/LeviWindows.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  pointer-events: none; // add this too if images shouldn't be clickable
+}
+
+.monitor-frame {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: 'win-xp', sans-serif;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/monitor.png');
+    background-size: 100% 100%; // ← stretches to fill exactly
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .screen {
+    position: absolute;
+    inset: 0;
+    background-image: url('/src/assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    padding: 0.9vw 17vh;
+
+    .calculator {
+      position: fixed;
+      top: 25%;
+      left: 25%;
+
+      .btn {
+        pointer-events: all;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(120%);
+        }
+
+        &:active {
+          filter: brightness(80%);
+        }
+      }
+
+      .nav {
+        width: 260px;
+        height: 28px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        cursor: grab;
+
+        &:active {
+          cursor: grabbing;
+        }
+
+        .nav-background {
+          position: absolute;
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+
+        .btn {
+          position: absolute;
+          cursor: pointer;
+        }
+
+        .min {
+          right: 54px;
+        }
+
+        .max {
+          position: absolute;
+          right: 30px;
+          cursor: not-allowed;
+        }
+
+        .close {
+          right: 6px;
+        }
+      }
+
+      .container {
+        position: relative;
+
+        .c-background {
+          position: absolute;
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+
+        .c-nav {
+          position: relative;
+          display: flex;
+          align-items: center;
+          color: #000;
+          gap: 12px;
+          font-size: 20px;
+          margin: 0 3.2px;
+          border-bottom: 1px solid white;
+
+          span {
+            user-select: none;
+            display: flex;
+            align-items: center;
+            line-height: 0.6;
+            margin-bottom: 6px;
+
+            u {
+              text-underline-offset: 1px;
+            }
+
+            &:first-child {
+              margin-left: 10px;
+            }
+          }
+        }
+
+        .display {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #000;
+
+          input {
+            display: block;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            margin: 4px auto 14px auto;
+            width: 230px;
+            height: 21px;
+
+            outline: none;
+            text-align: end;
+            caret-color: transparent;
+            font-family: 'win-xp', sans-serif;
+            font-size: 24px;
+
+            border: 1px solid #7f9db9;
+
+            &::placeholder {
+              color: #000;
+            }
+          }
+        }
+
+        .keys-one {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin: auto 12px auto 15px;
+
+          .btn {
+            width: 58px;
+          }
+
+          .nothing {
+            margin-right: 17px;
+          }
+
+          .backspace {
+            margin-right: 7px;
+          }
+
+          .ce {
+            margin-right: 7px;
+          }
+        }
+
+        .keys-two {
+          position: relative;
+          display: flex;
+          align-items: center;
+          margin: auto 13px;
+
+          .strange {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+
+            img {
+              width: 32px;
+            }
+          }
+
+          .numbers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 7px;
+            row-gap: 8px;
+            margin-top: 10px;
+            margin-left: 14px;
+
+            img {
+              width: 32px;
+            }
+          }
+
+          .operators {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 7px;
+            row-gap: 8px;
+            margin-top: 10px;
+            margin-left: 7px;
+
+            img {
+              width: 32px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
