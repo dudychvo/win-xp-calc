@@ -98,8 +98,16 @@ export const App = () => {
                 alt='Minimize'
                 className='btn min'
               />
-              <img src='assets/nav/maximize.svg' alt='Maximize' className='max' />
-              <img src='assets/nav/close.svg' alt='Close' className='btn close' />
+              <img
+                src='assets/nav/maximize.svg'
+                alt='Maximize'
+                className='max'
+              />
+              <img
+                src='assets/nav/close.svg'
+                alt='Close'
+                className='btn close'
+              />
             </div>
             <div className='container'>
               <img
